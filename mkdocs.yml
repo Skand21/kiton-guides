@@ -23,8 +23,6 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
-  favicon: assets/logo.png
-  logo: assets/logo.png
   features:
     - navigation.tabs
     - navigation.sections
@@ -46,6 +44,7 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
+  generator: false
   social:
     - icon: simple/telegram
       link: https://t.me/tutor_auto_bot
@@ -88,4 +87,4 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - toc:
-      permalink: true
+      permalink: false

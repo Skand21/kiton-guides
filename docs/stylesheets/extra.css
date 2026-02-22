@@ -1,0 +1,147 @@
+/* ── KITON Brand Colors ──────────────────────────────── */
+:root {
+  --md-primary-fg-color:        #4F46E5;  /* indigo-600  */
+  --md-primary-fg-color--light: #818CF8;  /* indigo-400  */
+  --md-primary-fg-color--dark:  #3730A3;  /* indigo-800  */
+  --md-accent-fg-color:         #0EA5E9;  /* sky-500 (бирюзовый) */
+  --md-accent-fg-color--transparent: #0EA5E920;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #6366F1;
+  --md-primary-fg-color--light: #A5B4FC;
+  --md-primary-fg-color--dark:  #4338CA;
+  --md-accent-fg-color:         #38BDF8;
+}
+
+/* ── Навигационная полоса ─────────────────────────────── */
+.md-header {
+  background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.35);
+}
+
+.md-tabs {
+  background: linear-gradient(135deg, #3730A3 0%, #5B21B6 100%);
+}
+
+/* ── Hero-секция на главной ───────────────────────────── */
+.kiton-hero {
+  text-align: center;
+  padding: 3.5rem 1rem 2.5rem;
+  background: linear-gradient(135deg, #EEF2FF 0%, #F0F9FF 100%);
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+[data-md-color-scheme="slate"] .kiton-hero {
+  background: linear-gradient(135deg, #1e1b4b22 0%, #0c4a6e22 100%);
+}
+
+.kiton-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #4F46E5;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+[data-md-color-scheme="slate"] .kiton-hero h1 {
+  color: #818CF8;
+}
+
+.kiton-hero p {
+  font-size: 1.15rem;
+  color: #6B7280;
+  margin: 0;
+}
+
+[data-md-color-scheme="slate"] .kiton-hero p {
+  color: #9CA3AF;
+}
+
+/* ── Карточки ролей ───────────────────────────────────── */
+.kiton-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.kiton-card {
+  display: block;
+  padding: 1.75rem 1.5rem;
+  border-radius: 12px;
+  border: 1.5px solid #E0E7FF;
+  background: #ffffff;
+  text-decoration: none !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+[data-md-color-scheme="slate"] .kiton-card {
+  background: #1e1e2e;
+  border-color: #3730A3;
+}
+
+.kiton-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(79, 70, 229, 0.18);
+  border-color: #4F46E5;
+}
+
+.kiton-card-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.kiton-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+[data-md-color-scheme="slate"] .kiton-card h3 {
+  color: #E5E7EB;
+}
+
+.kiton-card p {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #6B7280;
+  line-height: 1.55;
+}
+
+.kiton-card .kiton-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4F46E5;
+}
+
+[data-md-color-scheme="slate"] .kiton-link {
+  color: #818CF8;
+}
+
+/* ── Разделитель на главной ───────────────────────────── */
+.kiton-divider {
+  text-align: center;
+  margin: 2.5rem 0 0.5rem;
+  color: #6B7280;
+  font-size: 0.9rem;
+}
+
+/* ── Боковая панель: активный пункт ──────────────────── */
+.md-nav__link--active {
+  color: #4F46E5 !important;
+  font-weight: 600;
+}
+
+/* ── Небольшое улучшение заголовков статей ───────────── */
+.md-content h1 {
+  border-bottom: 2px solid #E0E7FF;
+  padding-bottom: 0.4em;
+}
+
+[data-md-color-scheme="slate"] .md-content h1 {
+  border-color: #3730A3;
+}

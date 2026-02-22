@@ -9,36 +9,41 @@ theme:
   language: ru
   palette:
     - scheme: default
-      primary: deep purple
-      accent: purple
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Тёмная тема
     - scheme: slate
-      primary: deep purple
-      accent: purple
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Светлая тема
   font:
-    text: Roboto
-    code: Roboto Mono
-  logo: assets/logo.png
+    text: Inter
+    code: JetBrains Mono
   favicon: assets/logo.png
+  logo: assets/logo.png
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
     - navigation.instant
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.tooltips
     - toc.follow
+    - header.autohide
 
 plugins:
   - search:
       lang: ru
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social:
@@ -77,6 +82,9 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
   - toc:

@@ -1,0 +1,83 @@
+site_name: KITON — База знаний
+site_description: Документация для репетиторов, родителей и учеников платформы KITON
+site_url: https://skand21.github.io/kiton-guides/
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.tooltips
+    - toc.follow
+
+plugins:
+  - search:
+      lang: ru
+
+extra:
+  social:
+    - icon: simple/telegram
+      link: https://t.me/tutor_auto_bot
+      name: Telegram-бот KITON
+
+nav:
+  - Главная: index.md
+  - Репетиторы:
+    - Начало работы: Tutor/README.md
+    - Ученики: Tutor/Ученики.md
+    - Занятия: Tutor/Занятия.md
+    - Домашние задания: Tutor/Домашние задания.md
+    - Оплаты: Tutor/Оплаты.md
+    - Статистика:
+      - Обзор: Tutor/Статистика.md
+      - Excel-статистика: Tutor/Статистика/Excel-статистика.md
+    - Профиль: Tutor/Профиль.md
+    - Газики: Tutor/Газики.md
+  - Родители:
+    - Начало работы: Parent/README.md
+    - Дети: Parent/Дети.md
+    - Домашние задания: Parent/Домашние задания.md
+    - Оплаты: Parent/Оплаты.md
+    - Прогресс: Parent/Прогресс.md
+    - Профиль: Parent/Профиль.md
+  - Ученики:
+    - Начало работы: Student/README.md
+    - Домашние задания: Student/Домашние задания.md
+    - Оплаты: Student/Оплаты.md
+    - Профиль: Student/Профиль.md
+    - Газики: Student/Газики.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true

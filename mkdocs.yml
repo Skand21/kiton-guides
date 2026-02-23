@@ -62,6 +62,7 @@ nav:
       - Обзор: Tutor/Статистика.md
       - Excel-статистика: Tutor/Статистика/Excel-статистика.md
     - Профиль: Tutor/Профиль.md
+    - Группы: Tutor/Группы.md
     - Газики: Tutor/Газики.md
   - Родители:
     - Начало работы: Parent/README.md
@@ -76,6 +77,9 @@ nav:
     - Оплаты: Student/Оплаты.md
     - Профиль: Student/Профиль.md
     - Газики: Student/Газики.md
+  - Для авторов:
+    - Правила контента: "Для авторов/CONTENT_RULES.md"
+    - Чеклист тем: "Для авторов/TOPICS_CHECKLIST.md"
 
 markdown_extensions:
   - admonition

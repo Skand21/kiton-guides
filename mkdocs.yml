@@ -65,6 +65,7 @@ nav:
     - Тарифы: Tutor/tariffs.md
     - Партнёрская программа: Tutor/partner-program.md
     - Газики: Tutor/gaziks.md
+    - Групповые занятия: Tutor/groups.md
   - Родители:
     - Начало работы: Parent/README.md
     - Дети: Parent/children.md
@@ -79,6 +80,7 @@ nav:
     - Оплаты: Student/payments.md
     - Профиль: Student/profile.md
     - Газики: Student/gaziks.md
+    - Мои группы: Student/groups.md
 
 markdown_extensions:
   - admonition

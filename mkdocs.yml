@@ -54,28 +54,31 @@ nav:
   - Главная: index.md
   - Репетиторы:
     - Начало работы: Tutor/README.md
-    - Ученики: Tutor/Ученики.md
-    - Занятия: Tutor/Занятия.md
-    - Домашние задания: Tutor/Домашние задания.md
-    - Оплаты: Tutor/Оплаты.md
+    - Ученики: Tutor/students.md
+    - Занятия: Tutor/lessons.md
+    - Домашние задания: Tutor/homework.md
+    - Оплаты: Tutor/payments.md
     - Статистика:
-      - Обзор: Tutor/Статистика.md
-      - Excel-статистика: Tutor/Статистика/Excel-статистика.md
-    - Профиль: Tutor/Профиль.md
-    - Газики: Tutor/Газики.md
+      - Обзор: Tutor/statistics.md
+      - Excel-статистика: Tutor/statistics/excel-statistics.md
+    - Профиль: Tutor/profile.md
+    - Тарифы: Tutor/tariffs.md
+    - Партнёрская программа: Tutor/partner-program.md
+    - Газики: Tutor/gaziks.md
   - Родители:
     - Начало работы: Parent/README.md
-    - Дети: Parent/Дети.md
-    - Домашние задания: Parent/Домашние задания.md
-    - Оплаты: Parent/Оплаты.md
-    - Прогресс: Parent/Прогресс.md
-    - Профиль: Parent/Профиль.md
+    - Дети: Parent/children.md
+    - Домашние задания: Parent/homework.md
+    - Оплаты: Parent/payments.md
+    - Прогресс: Parent/progress.md
+    - Профиль: Parent/profile.md
   - Ученики:
     - Начало работы: Student/README.md
-    - Домашние задания: Student/Домашние задания.md
-    - Оплаты: Student/Оплаты.md
-    - Профиль: Student/Профиль.md
-    - Газики: Student/Газики.md
+    - Занятия: Student/lessons.md
+    - Домашние задания: Student/homework.md
+    - Оплаты: Student/payments.md
+    - Профиль: Student/profile.md
+    - Газики: Student/gaziks.md
 
 markdown_extensions:
   - admonition

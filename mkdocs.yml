@@ -3,6 +3,8 @@ site_description: Документация для репетиторов, род
 site_url: https://skand21.github.io/kiton-guides/
 
 docs_dir: docs
+exclude_docs: |
+  docs/Для авторов/*.md
 
 theme:
   name: material

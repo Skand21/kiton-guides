@@ -18,7 +18,7 @@
 
 ### 1. Регистрация
 
-1. Откройте бота [KITON](http://t.me/tutor_auto_bot) в Telegram по [@tutor_auto_bot](http://t.me/tutor_auto_bot) и нажмите «Запустить» или `/start`.
+1. Откройте бота [KITON](https://t.me/tutor_auto_bot) в Telegram по [@tutor_auto_bot](https://t.me/tutor_auto_bot) и нажмите «Запустить» или `/start`.
 2. Выберите роль «👨🎓 Ученик».
 3. Заполните профиль:
     - Фамилия (только кириллица, с большой буквы)

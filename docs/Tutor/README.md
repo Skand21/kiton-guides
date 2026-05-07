@@ -36,7 +36,7 @@
 
 ### 1. Регистрация и первичная настройка
 
-1. Откройте бота [KITON](http://t.me/tutor_auto_bot) в Telegram по [@tutor_auto_bot](http://t.me/tutor_auto_bot) и нажмите «Запустить» или `/start`.
+1. Откройте бота [KITON](https://t.me/tutor_auto_bot) в Telegram по [@tutor_auto_bot](https://t.me/tutor_auto_bot) и нажмите «Запустить» или `/start`.
 2. Выберите роль «Репетитор», заполните профиль (ФИО, предметы, контактные данные).
 3. По кнопке или команде `/menu` вы окажетесь в главном меню сервиса.
 

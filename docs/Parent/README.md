@@ -8,7 +8,7 @@
 
 ### 1. Регистрация
 
-1. Откройте [@tutor_auto_bot](http://t.me/tutor_auto_bot) в Telegram
+1. Откройте [@tutor_auto_bot](https://t.me/tutor_auto_bot) в Telegram
 2. Нажмите **«Запустить»** или `/start`
 3. Выберите роль **👨‍👩‍👧 Родитель**
 4. Заполните: Фамилия, Имя (кириллица), Телефон (+7XXXXXXXXXX)

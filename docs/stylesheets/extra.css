@@ -1,147 +1,110 @@
-/* ── KITON Brand Colors ──────────────────────────────── */
 :root {
-  --md-primary-fg-color:        #4F46E5;  /* indigo-600  */
-  --md-primary-fg-color--light: #818CF8;  /* indigo-400  */
-  --md-primary-fg-color--dark:  #3730A3;  /* indigo-800  */
-  --md-accent-fg-color:         #0EA5E9;  /* sky-500 (бирюзовый) */
-  --md-accent-fg-color--transparent: #0EA5E920;
+  --md-primary-fg-color: #2563eb;
+  --md-primary-fg-color--light: #60a5fa;
+  --md-primary-fg-color--dark: #1d4ed8;
+  --md-accent-fg-color: #0ea5e9;
+  --kiton-card-border: rgba(37, 99, 235, 0.16);
+  --kiton-card-bg: #ffffff;
+  --kiton-soft-bg: #eff6ff;
 }
 
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        #6366F1;
-  --md-primary-fg-color--light: #A5B4FC;
-  --md-primary-fg-color--dark:  #4338CA;
-  --md-accent-fg-color:         #38BDF8;
+  --md-primary-fg-color: #60a5fa;
+  --md-primary-fg-color--light: #93c5fd;
+  --md-primary-fg-color--dark: #2563eb;
+  --md-accent-fg-color: #38bdf8;
+  --kiton-card-border: rgba(147, 197, 253, 0.22);
+  --kiton-card-bg: #151b2b;
+  --kiton-soft-bg: rgba(37, 99, 235, 0.14);
 }
 
-/* ── Навигационная полоса ─────────────────────────────── */
 .md-header {
-  background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
-  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.35);
+  background: #0f172a;
+  box-shadow: 0 2px 14px rgba(15, 23, 42, 0.22);
 }
 
 .md-tabs {
-  background: linear-gradient(135deg, #3730A3 0%, #5B21B6 100%);
+  background: #111827;
 }
 
-/* ── Hero-секция на главной ───────────────────────────── */
 .kiton-hero {
-  text-align: center;
-  padding: 3.5rem 1rem 2.5rem;
-  background: linear-gradient(135deg, #EEF2FF 0%, #F0F9FF 100%);
-  border-radius: 16px;
-  margin-bottom: 2rem;
+  padding: 2rem;
+  margin: 0 0 1.5rem;
+  border: 1px solid var(--kiton-card-border);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at top right, rgba(96, 165, 250, 0.18), transparent 34%),
+    var(--kiton-soft-bg);
 }
 
-[data-md-color-scheme="slate"] .kiton-hero {
-  background: linear-gradient(135deg, #1e1b4b22 0%, #0c4a6e22 100%);
+.kiton-hero h2 {
+  margin-top: 0;
 }
 
-.kiton-hero h1 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: #4F46E5;
-  margin: 0 0 0.75rem;
-  letter-spacing: -0.02em;
+.kiton-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
 }
 
-[data-md-color-scheme="slate"] .kiton-hero h1 {
-  color: #818CF8;
-}
-
-.kiton-hero p {
-  font-size: 1.15rem;
-  color: #6B7280;
+.kiton-cards > p {
   margin: 0;
 }
 
-[data-md-color-scheme="slate"] .kiton-hero p {
-  color: #9CA3AF;
-}
-
-/* ── Карточки ролей ───────────────────────────────────── */
-.kiton-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
-  margin: 2rem 0;
-}
-
-.kiton-card {
+.kiton-cards a {
   display: block;
-  padding: 1.75rem 1.5rem;
-  border-radius: 12px;
-  border: 1.5px solid #E0E7FF;
-  background: #ffffff;
-  text-decoration: none !important;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  min-height: 150px;
+  padding: 1.15rem;
+  border: 1px solid var(--kiton-card-border);
+  border-radius: 14px;
+  background: var(--kiton-card-bg);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.16s ease, transform 0.16s ease, box-shadow 0.16s ease;
 }
 
-[data-md-color-scheme="slate"] .kiton-card {
-  background: #1e1e2e;
-  border-color: #3730A3;
+.kiton-cards a:hover {
+  transform: translateY(-2px);
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
 }
 
-.kiton-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(79, 70, 229, 0.18);
-  border-color: #4F46E5;
+.kiton-card strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--md-primary-fg-color);
+  font-size: 1rem;
 }
 
-.kiton-card-icon {
-  font-size: 2.4rem;
-  margin-bottom: 0.75rem;
-  line-height: 1;
-}
-
-.kiton-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #1F2937;
-}
-
-[data-md-color-scheme="slate"] .kiton-card h3 {
-  color: #E5E7EB;
-}
-
-.kiton-card p {
-  margin: 0 0 1rem;
-  font-size: 0.9rem;
-  color: #6B7280;
+.kiton-card span {
+  color: var(--md-default-fg-color--light);
   line-height: 1.55;
 }
 
-.kiton-card .kiton-link {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #4F46E5;
-}
-
-[data-md-color-scheme="slate"] .kiton-link {
-  color: #818CF8;
-}
-
-/* ── Разделитель на главной ───────────────────────────── */
-.kiton-divider {
-  text-align: center;
-  margin: 2.5rem 0 0.5rem;
-  color: #6B7280;
-  font-size: 0.9rem;
-}
-
-/* ── Боковая панель: активный пункт ──────────────────── */
-.md-nav__link--active {
-  color: #4F46E5 !important;
-  font-weight: 600;
-}
-
-/* ── Небольшое улучшение заголовков статей ───────────── */
 .md-content h1 {
-  border-bottom: 2px solid #E0E7FF;
-  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--kiton-card-border);
+  padding-bottom: 0.35em;
 }
 
-[data-md-color-scheme="slate"] .md-content h1 {
-  border-color: #3730A3;
+.md-typeset img {
+  border: 1px solid var(--kiton-card-border);
+  border-radius: 12px;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+  .kiton-hero {
+    padding: 1.25rem;
+    border-radius: 14px;
+  }
+
+  .kiton-cards {
+    grid-template-columns: 1fr;
+  }
 }

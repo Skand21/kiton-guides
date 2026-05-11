@@ -1,8 +1,11 @@
-site_name: KITON — База знаний
-site_description: Документация для репетиторов, родителей и учеников платформы KITON
+site_name: КИТОН - база знаний
+site_description: Публичные гайды по веб-сервису и Telegram-боту КИТОН для репетиторов, учеников и родителей
 site_url: https://skand21.github.io/kiton-guides/
 
 docs_dir: docs
+exclude_docs: |
+  Tutor/*.md
+  Tutor/statistics/*.md
 
 theme:
   name: material
@@ -13,7 +16,7 @@ theme:
       accent: custom
       toggle:
         icon: material/weather-night
-        name: Тёмная тема
+        name: Темная тема
     - scheme: slate
       primary: custom
       accent: custom
@@ -48,39 +51,49 @@ extra:
   social:
     - icon: simple/telegram
       link: https://t.me/tutor_auto_bot
-      name: Telegram-бот KITON
+      name: Telegram-бот КИТОН
 
 nav:
   - Главная: index.md
-  - Репетиторы:
-    - Начало работы: Tutor/README.md
-    - Ученики: Tutor/students.md
-    - Занятия: Tutor/lessons.md
-    - Домашние задания: Tutor/homework.md
-    - Оплаты: Tutor/payments.md
-    - Статистика:
-      - Обзор: Tutor/statistics.md
-      - Excel-статистика: Tutor/statistics/excel-statistics.md
-    - Профиль: Tutor/profile.md
-    - Тарифы: Tutor/tariffs.md
-    - Партнёрская программа: Tutor/partner-program.md
-    - Газики: Tutor/gaziks.md
-    - Групповые занятия: Tutor/groups.md
-  - Родители:
-    - Начало работы: Parent/README.md
+  - Быстрый старт:
+    - С чего начать: start/index.md
+    - Роли и доступы: start/roles.md
+    - Регистрация: start/registration.md
+  - Веб-сервис:
+    - Первый результат: service/tutor-start.md
+    - Ученики: service/students.md
+    - Расписание: service/schedule.md
+    - Домашние задания: service/homework.md
+    - Оплаты и баланс: service/payments.md
+    - Прогресс и пробники: service/progress.md
+    - Газики: service/gaziki.md
+    - Группы: service/groups.md
+    - Отчеты: service/reports.md
+    - Настройки: service/settings.md
+    - Партнерка: service/partners.md
+  - Telegram-бот:
+    - Что умеет бот: telegram-bot/index.md
+    - Как привязать Telegram: telegram-bot/connect.md
+    - Уведомления: telegram-bot/notifications.md
+    - Домашние задания: telegram-bot/homework.md
+    - Оплаты: telegram-bot/payments.md
+    - Если что-то не работает: telegram-bot/troubleshooting.md
+  - Ученикам:
+    - Кабинет ученика: Student/README.md
+    - Занятия: Student/lessons.md
+    - Домашние задания: Student/homework.md
+    - Газики: Student/gaziks.md
+    - Группы: Student/groups.md
+    - Оплаты: Student/payments.md
+    - Профиль: Student/profile.md
+  - Родителям:
+    - Кабинет родителя: Parent/README.md
     - Дети: Parent/children.md
     - Домашние задания: Parent/homework.md
     - Оплаты: Parent/payments.md
     - Прогресс: Parent/progress.md
     - Профиль: Parent/profile.md
-  - Ученики:
-    - Начало работы: Student/README.md
-    - Занятия: Student/lessons.md
-    - Домашние задания: Student/homework.md
-    - Оплаты: Student/payments.md
-    - Профиль: Student/profile.md
-    - Газики: Student/gaziks.md
-    - Мои группы: Student/groups.md
+  - FAQ: faq/index.md
 
 markdown_extensions:
   - admonition

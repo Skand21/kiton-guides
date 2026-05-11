@@ -1,11 +1,13 @@
-site_name: КИТОН - база знаний
-site_description: Публичные гайды по веб-сервису и Telegram-боту КИТОН для репетиторов, учеников и родителей
+site_name: КИТОН - гайды Telegram-бота
+site_description: Публичные гайды по Telegram-боту КИТОН для репетиторов, учеников и родителей
 site_url: https://skand21.github.io/kiton-guides/
 
 docs_dir: docs
 exclude_docs: |
-  Tutor/*.md
-  Tutor/statistics/*.md
+  service/*.md
+  start/*.md
+  faq/*.md
+  assets/images/web/*
 
 theme:
   name: material
@@ -55,22 +57,6 @@ extra:
 
 nav:
   - Главная: index.md
-  - Быстрый старт:
-    - С чего начать: start/index.md
-    - Роли и доступы: start/roles.md
-    - Регистрация: start/registration.md
-  - Веб-сервис:
-    - Первый результат: service/tutor-start.md
-    - Ученики: service/students.md
-    - Расписание: service/schedule.md
-    - Домашние задания: service/homework.md
-    - Оплаты и баланс: service/payments.md
-    - Прогресс и пробники: service/progress.md
-    - Газики: service/gaziki.md
-    - Группы: service/groups.md
-    - Отчеты: service/reports.md
-    - Настройки: service/settings.md
-    - Партнерка: service/partners.md
   - Telegram-бот:
     - Что умеет бот: telegram-bot/index.md
     - Как привязать Telegram: telegram-bot/connect.md
@@ -78,22 +64,34 @@ nav:
     - Домашние задания: telegram-bot/homework.md
     - Оплаты: telegram-bot/payments.md
     - Если что-то не работает: telegram-bot/troubleshooting.md
-  - Ученикам:
-    - Кабинет ученика: Student/README.md
+  - Репетитору:
+    - Старт в боте: Tutor/README.md
+    - Ученики: Tutor/students.md
+    - Занятия: Tutor/lessons.md
+    - Домашние задания: Tutor/homework.md
+    - Оплаты: Tutor/payments.md
+    - Статистика: Tutor/statistics.md
+    - Excel-статистика: Tutor/statistics/excel-statistics.md
+    - Профиль: Tutor/profile.md
+    - Газики: Tutor/gaziks.md
+    - Группы: Tutor/groups.md
+    - Тарифы: Tutor/tariffs.md
+    - Партнерка: Tutor/partner-program.md
+  - Ученику:
+    - Старт в боте: Student/README.md
     - Занятия: Student/lessons.md
     - Домашние задания: Student/homework.md
     - Газики: Student/gaziks.md
     - Группы: Student/groups.md
     - Оплаты: Student/payments.md
     - Профиль: Student/profile.md
-  - Родителям:
-    - Кабинет родителя: Parent/README.md
+  - Родителю:
+    - Старт в боте: Parent/README.md
     - Дети: Parent/children.md
     - Домашние задания: Parent/homework.md
     - Оплаты: Parent/payments.md
     - Прогресс: Parent/progress.md
     - Профиль: Parent/profile.md
-  - FAQ: faq/index.md
 
 markdown_extensions:
   - admonition

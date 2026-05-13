@@ -48,6 +48,9 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/image-links.js
+
 extra:
   generator: false
   social:

@@ -88,9 +88,27 @@
 }
 
 .md-typeset img {
+  display: block;
+  width: auto;
+  max-width: min(100%, 760px);
+  max-height: 420px;
+  margin: 1rem auto;
+  object-fit: contain;
   border: 1px solid var(--kiton-card-border);
   border-radius: 12px;
   box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+}
+
+.md-typeset .kiton-image-link {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 1rem auto;
+  cursor: zoom-in;
+}
+
+.md-typeset .kiton-image-link img {
+  margin: 0;
 }
 
 .md-typeset .admonition,
@@ -106,5 +124,9 @@
 
   .kiton-cards {
     grid-template-columns: 1fr;
+  }
+
+  .md-typeset img {
+    max-height: 320px;
   }
 }

@@ -60,6 +60,7 @@ extra:
 
 nav:
   - Главная: index.md
+  - AI и MCP: ai-mcp.md
   - Telegram-бот:
     - Что умеет бот: telegram-bot/index.md
     - Как привязать Telegram: telegram-bot/connect.md

@@ -1,13 +1,10 @@
-site_name: КИТОН - гайды Telegram-бота
+site_name: КИТОН - сайт и Telegram-бот
 site_description: Публичные гайды по Telegram-боту КИТОН для репетиторов, учеников и родителей
 site_url: https://skand21.github.io/kiton-guides/
 
 docs_dir: docs
 exclude_docs: |
-  service/*.md
-  start/*.md
   faq/*.md
-  assets/images/web/*
 
 theme:
   name: material
@@ -68,9 +65,15 @@ nav:
     - Домашние задания: telegram-bot/homework.md
     - Оплаты: telegram-bot/payments.md
     - Если что-то не работает: telegram-bot/troubleshooting.md
+  - Сайт:
+    - Первый запуск: service/tutor-start.md
+    - Ученики: service/students.md
+    - Занятия и результат: service/schedule.md
+    - Регистрация: start/registration.md
   - Репетитору:
     - Старт в боте: Tutor/README.md
     - Ученики: Tutor/students.md
+    - Родители: Tutor/parents.md
     - Занятия: Tutor/lessons.md
     - Домашние задания: Tutor/homework.md
     - Оплаты: Tutor/payments.md

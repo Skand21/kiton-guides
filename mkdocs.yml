@@ -72,6 +72,7 @@ nav:
     - Ученики: Tutor/students.md
     - Занятия: Tutor/lessons.md
     - Домашние задания: Tutor/homework.md
+    - Материалы и доступ: Tutor/materials.md
     - Оплаты: Tutor/payments.md
     - Статистика: Tutor/statistics.md
     - Excel-статистика: Tutor/statistics/excel-statistics.md
@@ -84,6 +85,7 @@ nav:
     - Старт в боте: Student/README.md
     - Занятия: Student/lessons.md
     - Домашние задания: Student/homework.md
+    - Материалы занятий: Student/materials.md
     - Газики: Student/gaziks.md
     - Группы: Student/groups.md
     - Оплаты: Student/payments.md
@@ -92,6 +94,7 @@ nav:
     - Старт в боте: Parent/README.md
     - Дети: Parent/children.md
     - Домашние задания: Parent/homework.md
+    - Материалы ребёнка: Parent/materials.md
     - Оплаты: Parent/payments.md
     - Прогресс: Parent/progress.md
     - Профиль: Parent/profile.md
